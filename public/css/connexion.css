@@ -1,0 +1,99 @@
+body{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box; 
+}
+/* Tritre en gras */
+.mtn{
+    font-size: 80px;
+    line-height: 90px;
+}
+.join{
+    font-size: 40px;
+}
+/* ///////////////////////////////////////////////////// */
+
+.inscription_btn{
+    display: inline-block;
+    overflow: hidden;
+    max-width: 280px;
+    max-height: 20px;
+}
+.img_left{
+    width: 400px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+.first{
+    position: relative;
+    background-image: url('../../public/asset/fond_twitter.png');  
+}
+
+.img-bg{
+    width: 100%;
+}
+.ou{
+    align-content: center;
+}
+.white{
+    color: white;
+}
+
+
+.big-font{
+    font-size: 70px;
+    line-height: 70px;
+}
+._470{
+    width: 470px;
+}
+._50{
+    width: 50px;
+}
+
+    /* RESPONSIVE */
+@media (max-width: 1200px) {
+    .img_left{
+        width: 370px;
+    }
+    .first{
+        width: 40%;
+    }
+}
+@media (max-width:1100px){
+    .img_left{
+        width: 300px;
+    }
+    .first{
+        width: 30%;
+    }
+}
+@media (max-width: 1000px){
+    .first{
+        display: none;
+    }
+    .row{
+        justify-content: center;
+        text-align: center;
+    }
+    .mtn{
+        font-size: 50px;
+        line-height: 60px;    
+
+    }
+    .join{
+        font-size: 30px;
+    }
+}
+@media (max-width:550px){
+    .mtn{
+        font-size: 30px;
+        line-height: 40px;    
+
+    }
+    .join{
+            font-size: 20px;
+    }
+}

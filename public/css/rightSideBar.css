@@ -1,0 +1,233 @@
+/* DROITE */
+
+.tendance_1{
+    display :flex;
+    flex-direction: column;
+    line-height: -10px;
+    cursor: pointer;
+    /* background-color: rgb(247, 249, 249); */
+    padding:5px;
+    display: block;
+    font-size: 15px; 
+}
+
+.show_more{
+    color: var(--color-primary);
+    display: flex;
+    padding:10px;
+    /* background-color: rgb(247, 249, 249); */
+    border-radius: 8px;
+}
+
+.show_more:hover{
+    background-color: rgba(229, 233, 233, 0.2);
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.tendance_1:hover{
+    background-color: rgba(229, 233, 233, 0.2); 
+}
+
+.titre_trend{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nb_tweet{
+    color: var(--colorText);
+}
+
+.nb_tweet:hover{
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.liens{
+    font-weight: bold;
+    color: var(--colorText);
+}
+.liens:hover{
+    text-decoration: none;
+    color: var(--color-primary);
+
+}
+.settings{
+    display: flex;
+    justify-content: space-between;
+    color: var(--colorText);
+    /* font-size:10px; */
+}
+
+.trends{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background);
+    border-radius: 5px;
+    padding:10px;
+}
+
+.trends:hover{
+    background-color: rgba(229, 233, 233, 0.2);
+}
+
+.iconify{
+    color: var(--colorText);
+}
+.iconify:hover 
+{
+    color: var(--color-primary);
+} 
+
+
+.politique_conf{
+    color: grey;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.politique_conf:hover{
+    color: grey;
+}
+
+input.rechercher{
+    border-radius: 20px;
+    background-color: rgb(239, 243, 244);
+    width: 350px;
+    padding: 5px;
+    border-style: none;
+    margin-top: 8px;
+}
+
+/* .barre_recherche{
+    width:50%;
+    margin-right: 50px; 
+} */
+
+.tweet_tendance{
+    width: 50%;
+    margin-right: 50%;
+    padding : 5px;
+    margin: 2px;
+    border-radius: 20px;
+    border-radius: 5px;
+    background-color: var(--background);
+}
+
+.right-sidebar{
+    margin-right: 15%;
+    position: fixed;
+}
+
+.trends h5{
+    font-weight: 500;
+}
+
+.trends h5:hover 
+{
+    color: var(--color-primary);
+}
+
+/* WHO TO FOLLOW */
+
+.who_to_follow{
+    /* background: rgb(247, 249, 249); */
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-right: 50%;
+    background-color: var(--background);
+}
+
+.who_to_follow__block{
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    /* border-bottom: 1px solid #e6ecf0; */
+}
+
+.who_to_follow__block:hover{
+    background-color: rgba(229, 233, 233, 0.2); 
+}
+
+.who_to_follow__author_logo{
+    width: 49px;
+    height: 49px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.who_to_follow__block:last-child{
+border-bottom: none;
+}
+
+.who_to_follow__author_slug{
+    color: var(--colorText);
+    font-size: 15px;
+
+}
+
+.who_to_follow__content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.who_to_follow__author_name{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.who_to_follow_heading{
+    font-size :19px;
+    /* font-weight: 700; */
+    color: grey;
+}
+
+.who_to_follow__btn{
+    /* border: 1px solid #1da0f2; */
+    color: var(--colorText);
+    background-color: var(--background);
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 15px;
+    padding: 10px;
+    min-width: 67px;
+    text-align: center;
+    border: 1px solid;
+    border-color: var(--color-primary);
+}
+
+.who_to_follow__btn:hover{
+    cursor: pointer;
+    background: var(--color-primary);
+}
+
+.navigation{
+    
+    position: fixed;
+} 
+/* 
+.bouton_tweet{
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 1em;
+} */
+
+/* .mur_actu{
+    width: 55%;
+} */
+/* .top_30{
+    width: 25%;
+} */
+/* 
+.text_tweet{
+   padding: 15px;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+} */
+/* .jesaispas{
+    border: 1px solid black;
+} */
+

@@ -1,0 +1,105 @@
+/* GENERAL */
+
+#col2
+{
+    border-right: 1px solid grey;
+}
+
+.btn.btn-message
+{
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 30px;
+    width: 10rem;
+    padding: 5px;
+}
+
+.btnRow 
+{
+    display: flex;
+    align-items: center;
+}
+
+.contentCol3
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-left: 25%;
+}
+
+#mod .modal-content
+{
+    background-color: var(--background);
+}
+
+#mod .modal-title h5
+{
+    color: var(--colorText);
+}
+
+
+
+/* Modal Search */
+
+.MS-container 
+{
+    position: absolute;
+    top: 85%;
+    width: 80%;
+    height: auto;
+    display: none;
+}
+
+.MS-container .card 
+{
+    display: flex;
+    justify-items: center;
+    background-color:var(--background);
+}
+
+.MS-container .card-content
+{
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid;
+    border-color: var(--color-primary);
+}
+
+.MS-container .card-img
+{
+    width: auto;
+    margin-right: 3%;
+    margin-left: 2%;
+    display: block;
+}
+
+.MS-container .card-img img 
+{
+    max-width: 40px;
+}
+
+.MS-container .card-pseudo
+{
+    display: inline-block;
+}
+
+.MS-container .card-pseudo h5 
+{
+    margin-top: 20px;
+}
+
+.search.active .MS-container
+{
+    display: block;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:1000px) {
+    #col3 
+    {
+        display: none;
+    }
+}

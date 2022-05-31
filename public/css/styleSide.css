@@ -1,0 +1,310 @@
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.2s ease;
+}
+
+body 
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0 3em;
+}
+
+.container 
+{
+    max-width: 1440px;
+    margin: auto;
+    height: 100vh;
+}
+
+/* Side bar */
+
+.side-bar
+{
+    height: 100%;
+    width:260px;
+    border-right: 1px solid #fff2;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.SideBarMobile
+{
+    background-color: var(--colorText);
+    border-top: 1px solid red;
+}
+
+.SideBarMobile .nav-bar {
+    padding-left: 0; 
+} 
+
+/* Nav bar */
+
+.nav-bar
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 100;
+}
+
+/* Nav bar brand */
+
+.nav-bar-brand
+{
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 8px 8px 4px 10px;
+    border-radius: 50%;
+}
+
+.nav-bar-brand:hover 
+{
+    background: var(--brandBackground);
+}
+
+li
+{
+    list-style: none;
+}
+
+/* Nav items */
+
+.nav-item
+{
+    padding: 8px 25px 8px 10px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-item:hover 
+{
+    background: var(--itemBackground);
+}
+
+/* Icons */
+
+a 
+{
+    text-decoration: none;
+    color: var(--colorPrimary);
+    font-size: 18px;
+}
+
+#logo-twitter
+{
+   font-size: 30px; 
+   color: var(--color-primary);
+}
+
+.nav-item .item-icon 
+{
+    margin-right: 15px;
+    font-size: 24px;
+}
+
+.nav-item .item-icon .hash
+{
+    padding: 0 3px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+/* Tweet Button */
+
+a.tweet-btn
+{
+    display: block;
+    width: 230px;
+    background: var(--color-primary);
+    color: var(--colorText);
+    text-align: center;
+    padding: 15px;
+    margin-top: 5px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+a.tweet-btn .icon-btn-twt{
+    font-size: 20px;
+    color: #fff;
+    display: none;
+}
+
+a.tweet-btn:hover 
+{
+    --tweetBtnBg: #1d9bf0ee;
+}
+
+/* Profile Button */
+
+a.profile-btn 
+{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 14px;
+}
+
+a.profile-btn:hover 
+{
+    background: var(--itemBackground);
+}
+
+.profile-info 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img.profile-img 
+{
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-info .name
+{
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.profile-info .username
+{
+    color: var(--colorSecondary);
+}
+
+.option-icon 
+{
+    font-size: 16px;
+    margin-top: 2px;
+}
+
+/* Sub items */
+
+.sub-items-box
+{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: var(--colorText);
+    background-color: var(--background);
+    box-shadow: 0 0 10px #fff;
+    width: 190px;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 100;
+    display: none;
+}
+
+.sub-items-box.active
+{
+    display: block;
+}
+
+.sub-item 
+{
+    padding: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sub-item:hover 
+{
+    background: lightgray;
+}
+
+.sub-item .item-icon
+{
+    margin-right: 10px;
+}
+
+.sub-item-icon 
+{
+    font-size: 18px;
+}
+
+.sub-item .item-link 
+{
+    font-size: 14px;
+}
+
+.sub-item .item-link:hover 
+{
+    color: var(--color-primary);
+}
+
+/* Config sub items */
+
+.config
+{
+    padding-top: 2px;
+    margin-top: 2px;
+    border-top: 1px solid #fff2;
+}
+
+.overlay
+{
+    position: absolute;
+    inset: 0;
+    background: transparent;
+    display: none;
+    z-index: 10;
+}
+
+.overlay.active 
+{
+    display: block;
+}
+
+/* Side bar top && Mobile */
+
+.sideBarTop{
+    display: flex;
+    position: absolute;
+    left: 10%;
+    width: 60%;
+    background-color: var(--background);
+}
+
+.sideBarTop .profile-img{
+    display: none;
+}
+
+.sideBarTop .profile-btn:hover{
+    background: none;
+}
+
+#logo-stars{
+    position: absolute;
+    right: 3%;
+    font-size: 30px;
+}
+
+#ellip-icon
+{
+    display: none;
+}
+
+.SideBarMobile{
+    display: none;
+    background: var(--background);
+    color: var(--colorText);
+}

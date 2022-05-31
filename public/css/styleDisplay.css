@@ -1,0 +1,364 @@
+:root {
+    --primary-color-hue: 252;
+    --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
+    --colorText: #000;
+    --background : white;
+    --whiteColorLightness: 100%;
+    --fontSize : 16px;
+    --brandBackground:#1d9bf020;
+    --brandColor: #d9d9d9;
+    --itemBackground: #d9d9d920;
+    --colorPrimary: #d9d9d9;
+    --colorSecondary: #6e767d;
+}
+
+html 
+{
+    font-size: var(--fontSize);
+}
+
+body 
+{
+    color: var(--colorText);
+    background-color: var(--background);
+}
+
+body a 
+{
+    color: var(--colorText);
+    font-size: var(--fontSize);
+}
+
+.customize-theme
+{
+    background: rgba(255,255,255,0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    text-align: center;
+    place-content: center;
+    display: none;
+    font-size: 0.9rem;
+}
+
+.customize-theme .card
+{
+    background: var(--background);
+    padding: 3rem;
+    border-radius: 30px;
+    width: 50vw;
+}
+
+/* ---------------- FONT SIZE -----------------*/
+
+.customize-theme .font-size
+{
+    margin-top: 5rem;
+}
+
+.customize-theme .font-size > div 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(237, 238, 247, 0.712);
+    padding: 5px 5px;
+    border-radius: 20px;
+}
+
+.customize-theme .choose-size 
+{
+    background: rgba(229, 169, 247, 0.877);
+    height: 0.3rem;
+    width: 100%;
+    margin: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customize-theme .choose-size span 
+{
+    width: 1rem;
+    height: 1rem;
+    background: rgba(229, 169, 247, 0.877);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.customize-theme .choose-size span.active 
+{
+    background: rgba(82, 52, 250, 0.877);
+}
+
+/* ---------------- COLORS -----------------*/
+
+.customize-theme .color 
+{
+    margin-top: 2rem;
+}
+
+.customize-theme .choose-color 
+{
+    background: rgba(237, 238, 247, 0.712);
+    padding: 5px 5px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.customize-theme .choose-color span 
+{
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+}
+
+.customize-theme .choose-color span:nth-child(1)
+{
+    background: hsl(252, 75%, 60%);
+}
+
+.customize-theme .choose-color span:nth-child(2)
+{
+    background: hsl(52, 75%, 60%);
+}
+
+.customize-theme .choose-color span:nth-child(3)
+{
+    background: hsl(352, 75%, 60%);
+}
+
+.customize-theme .choose-color span:nth-child(4)
+{
+    background: hsl(152, 75%, 60%);
+}
+
+.customize-theme .choose-color span:nth-child(5)
+{
+    background: hsl(202, 75%, 60%);
+}
+
+.customize-theme .choose-color span.active 
+{
+    border: 5px solid;
+    border-color: #fff
+}
+
+/* ---------------- BACKGROUND -----------------*/
+
+.customize-theme .background
+{
+    margin-top: 2rem;
+}
+
+.customize-theme .choose-bg 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.customize-theme .choose-bg  > div 
+{
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.customize-theme .choose-bg  > div.active
+{
+    border: 2px solid;
+    border-color: var(--color-primary);
+}
+
+.customize-theme .choose-bg .bg-1
+{
+    background-color: #fff;
+    color: #000;
+}
+
+.customize-theme .choose-bg .bg-2
+{
+    background-color: hsl(252, 30%, 17%);
+    color: #fff;
+}
+
+.customize-theme .choose-bg .bg-3
+{
+    background-color: #000;
+    color: #fff;
+}
+
+.customize-theme .choose-bg > div span 
+{
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid grey;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.customize-theme .choose-bg > div span.active 
+{
+    background-color: var(--color-primary);
+}
+
+.customize-theme .choose-bg h5 
+{
+    padding-top: 10px;
+}
+
+/* ---------------- BUTTON -----------------*/
+.divBtn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#doneBtn
+{
+    border-radius: 30px;
+    width: 15%;
+    justify-self: center;
+    background-color: var(--color-primary);
+}
+
+#closeIcon
+{
+    display: none;
+}
+
+/* ---------------- RESPONSIVE -----------------*/
+@media screen and (max-width: 2200px) {
+    .customize-theme .card 
+    {
+        width: 55vw;
+    }
+}
+
+
+@media screen and (max-width: 1205px) {
+    .customize-theme .card 
+    {
+        width: 65vw;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .customize-theme .card 
+    {
+        width: 70vw;
+    }
+    h5 
+    {
+        font-size: 1.15rem;
+    }
+}
+
+@media screen and (max-width: 945px) {
+    .customize-theme .card 
+    {
+        width: 80vw;
+    }
+    h5 
+    {
+        font-size: 1.10rem;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    .customize-theme .card 
+    {
+        width: 85vw;
+    }
+    h5 
+    {
+        font-size: 1.05rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .customize-theme .card 
+    {
+        width: 90vw;
+    }
+    h5 
+    {
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .customize-theme .card 
+    {
+        width: 100vw;
+        height: 100vh;
+        border-radius: none;
+    }
+    .customize-theme .card h2 
+    {
+        font-size: 1.25rem;
+        position: absolute;
+        top: 0;
+        left: 50px;
+        float: left;
+        padding-top: 10px;
+    }
+    .customize-theme .card p
+    {
+        padding-top: 35px;
+    }
+    #closeIcon
+    {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 5px;
+        font-size: 30px;
+    }
+ 
+    .customize-theme .choose-bg 
+    {
+        display: inline-block;
+        width: 100%;
+        /* padding: 15px; */
+        align-items: center;
+        background-color: rgb(34, 32, 32);
+    }
+
+    .customize-theme .font-size
+    {
+        margin-top: 1rem;
+    }
+    .customize-theme .choose-bg .bg-1
+    {
+        margin-bottom: 10px;
+    }
+    .customize-theme .choose-bg .bg-2
+    {
+        margin-bottom: 10px;
+    }
+    .customize-theme .choose-bg h5 
+    {
+        margin-left: 30%;
+        font-size: 1.15rem;
+    }
+    
+}
+
+
+
+

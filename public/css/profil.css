@@ -1,0 +1,336 @@
+/* button tweets */
+.btn__tab 
+{
+  color: rgb(59, 139, 214);
+  background: transparent;
+  border-radius: unset;
+  width: inherit;
+  min-width: 130px;
+ 
+  font-weight: 600; 
+}
+.profil__tweet--header{
+  display: none;
+ }
+  
+
+.btn__tab:hover 
+{
+  transform: none !important;
+  box-shadow: none !important;
+  background: rgba(0, 101, 124, 0.1) !important; 
+}
+
+.btn__tab.active 
+{
+  border-bottom: 2px solid;
+  border-bottom-color: var(--color-primary);
+}
+ 
+.user__name--bold 
+{
+  margin: 0;
+  font-size: 19px;
+  font-weight: 800; 
+}
+
+.profil__tweet--header, .search__tweet--header 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px; 
+}
+
+.user__banner 
+{
+  background: linear-gradient(180deg, #c4cfd6 200px, transparent 50%);
+  /* background: transparent; */
+  width: 100%;
+  height: 268px;
+  display: flex;
+  flex-direction: column-reverse; 
+}
+
+.user__banner--info 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.user_image--lg 
+{
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  background-size: contain !important;
+  border: 4px solid #fff;
+  margin-left: 16px;
+  background: url('../asset/UserLogo.png') no-repeat;
+} 
+
+.btn.btn-edit
+{
+  border-radius: 30px;
+  border: 1px solid;
+  border-color: var(--color-primary);
+  background-color: var(--background);
+  padding: 5px 15px;
+  color: var(--colorText);
+}
+
+.btn-edit:hover 
+{
+  background-color: var(--color-primary);
+  color: var(--colorText);
+}
+
+#abonnements:hover, #abonnes:hover 
+{
+  cursor: pointer;
+  text-decoration: underline; 
+}
+
+.last_col_msg
+{
+  margin: 25% 0px;
+}
+
+.btn.btn__tab.sub-item-profil 
+{
+  color: var(--colorText);
+}
+
+/* Modal */
+
+.modal 
+{
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #0009;
+}
+
+.modal-content
+{
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 3%;
+}
+
+.modal-body
+{
+  display: block;
+}
+
+.modal-body input 
+{
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+  padding: 12px;
+}
+
+.modal-body textarea 
+{
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+  padding: 20px;
+}
+
+.modal-footer 
+{
+  justify-content: start;
+  display: inline-block;
+}
+
+.modalImg
+{
+  display: block;
+  height: 250px;
+}
+
+.modal-imgCover
+{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.modal-imgAvatar
+{
+  position: absolute;
+  left: 0;
+  top: 25%;
+}
+
+.modal-imgAvatar .inputFile
+{
+  position: absolute;
+  left: 5%;
+  top: 20%;
+}
+
+.modal-imgCover .inputFile
+{
+  position: absolute;
+  left: 35%;
+  top: 15%;
+}
+
+.inputFile
+{
+  background: transparent;
+  width: auto;
+  height: auto;
+  display: none;
+}
+
+.inputFile2
+{
+  background: transparent;
+  width: auto;
+  height: auto;
+  display: none;
+}
+
+.modal-imgAvatar #iconPhoto
+{
+  position: absolute;
+  left: 50%;
+  top: 45%;
+}
+
+#iconPhoto
+{
+  cursor: pointer;
+  font-size: 17px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+}
+
+#iconPhoto:hover
+{
+  background-color: #c4cfd6;
+  padding: 2px;
+  border-radius: 100%;
+}
+
+/* BTN MODAL */
+
+#btnClose
+{
+    color: rgb(0, 0, 0);
+    float: left;
+    font-size: 15px;
+    padding-right: 30px;
+}
+
+.btn-save
+{
+  border-radius: 30px;
+  border: 1px solid rgba(49, 135, 233, 0.212);
+  padding: 5px 15px;
+  color: #000;
+}
+
+.btn-save:hover 
+{
+  background-color: #fff4;
+  color: #000;
+  border-color: #000;
+}
+
+@media screen and (max-width: 575px){
+
+.barre_recherche{
+  display: none;
+}
+.side-bar{
+  display: none;
+}
+body{
+  padding: none;
+  box-sizing: border-box;
+}
+.container{
+  height: 87vh;
+
+}
+.footer{
+  height: 10vh;
+  width: 100%;     
+}
+
+.side-bar{
+  display: none;
+}
+
+.SideBarMobile{
+  display: flex;
+  width:100%;
+  border-top: 1px solid #fff2;
+  padding-top: 10px;
+  flex-direction: row;
+  justify-content: space-around;
+  /* position: fixed; */
+}
+.SideBarMobile .nav-bar
+{
+  flex-direction: row;
+}
+.SideBarMobile .nav-item{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.SideBarMobile .item-icon{
+  font-size: 26px;
+}
+.SideBarMobile a.tweet-btn{
+  position: absolute;
+  right: 0;
+  bottom: 70px;
+  padding: 16px;
+}
+.SideBarMobile a.tweet-btn .icon-btn-twt{
+  font-size: 24px;
+}
+.sideBarTop .profile-img{
+  display: block;
+  margin-right: 15px;
+}
+}
+
+@media screen and (max-width: 1000px){
+  
+  .barre_recherche{
+      display: none;
+  }
+   body{
+     padding: 0px;
+   }
+  } 
+  @media screen and (max-width:972px){
+    .barre_2{
+      display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+    padding-left:146px ;
+    padding-right: 146px;
+    }
+    
+  }
+  @media screen and(max-width:460px) {
+    .barre_2{
+   
+    padding-left:140px ;
+    padding-right: 140px;
+    }
+    
+  }
+ 
